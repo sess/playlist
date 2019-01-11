@@ -8,7 +8,7 @@
 ### Set-Up
 - [x] Go to the repository at https://github.com/ScriptEdcurriculum/playlist
 - [x] Fork this repository to your github account and clone it to a new workspace
-- [ ] Add, commit, and push your changes
+- [x] Add, commit, and push your changes
 - [x] Make your site live on gh-pages
 
 ### JS
@@ -17,7 +17,7 @@
 - [x] Create four new arrays to store
 - [x] images_urls, artists, song lengths, and links
 ### html / css
-- [ ] Customize your CSS or add another column
+- [x] Customize your CSS or add another column
 
 ### Wrap
 - [ ] Push your changes!

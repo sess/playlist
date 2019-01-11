@@ -17,6 +17,8 @@ let songLinks = ["https://www.youtube.com/watch?v=UqyT8IEBkvY","https://youtu.be
 
     // BELOW Use forEach Loop to display the data from each of your array's in the correct div
 
+
+
 function emptySongInfo(){
     $("#songs").empty();
     // Use jQuery to empty all of the remaining divs
