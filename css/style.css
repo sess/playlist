@@ -64,3 +64,15 @@ button {
     font-size: 14px;
     padding: 5px 10px;
 }
+
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+.songInput{
+    width:190px;
+}
+
+#form p{
+    text-align:center;
+}
