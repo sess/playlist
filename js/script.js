@@ -16,8 +16,25 @@ let imageLinks = ["https://f4.bcbits.com/img/a3321951232_10.jpg",
 let songLinks = ["https://www.youtube.com/watch?v=UqyT8IEBkvY","https://youtu.be/SAaO6XvUhd0","https://youtu.be/6OqyD4KhV-M","https://youtu.be/tEJpLDEOivA"];
 
     // BELOW Use forEach Loop to display the data from each of your array's in the correct div
+songs.forEach(function(song){
+    $("#songs").append(`<p> ${song} </p>`);
+});
 
+artists.forEach(function(artist){
+    $("#artists").append(`<p> ${artist} </p>`);
+});
 
+songLengths.forEach(function(length){
+    $("#lengths").append(`<p> ${length} </p>`);
+});
+
+songLinks.forEach(function(sLinks){
+    $("#links").append(`<a target="_blank" href=${sLinks}>`);
+});
+
+imageLinks.forEach(function(link){
+    $("#images").append(`<img src="${link}">`);
+});
 
 function emptySongInfo(){
     $("#songs").empty();
@@ -29,8 +46,13 @@ function emptySongInfo(){
 
 function addSongInfo(){
     // BELOW write the code to add new items to each of the arrays.
-
-
+    let a = $("#song").val();
+    let b = $("#artist").val();
+    let c = $("#length").val();
+    let d = $("#image").val();
+    let e = $("#link").val();
+    
+    console.log("test");
 }
 
 $("#add").click(function() {

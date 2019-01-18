@@ -77,3 +77,18 @@ html{
 #form p{
     text-align:center;
 }
+
+/* starter code ends here */
+
+#add{
+    background-color:lightgrey;
+    border:1.5px solid lightgrey;
+}
+
+#links{
+    color:black;
+}
+
+a{
+    cursor:pointer;
+}
