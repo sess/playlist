@@ -16,44 +16,48 @@ let imageLinks = ["https://f4.bcbits.com/img/a3321951232_10.jpg",
 let songLinks = ["https://www.youtube.com/watch?v=UqyT8IEBkvY","https://youtu.be/SAaO6XvUhd0","https://youtu.be/6OqyD4KhV-M","https://youtu.be/tEJpLDEOivA"];
 
     // BELOW Use forEach Loop to display the data from each of your array's in the correct div
-songs.forEach(function(song){
-    $("#songs").append(`<p> ${song} </p>`);
-});
+    
+function displaySongInfo(){
+    songs.forEach(function(song){
+        $("#songs").append(`<p> ${song} </p>`);
+    });
 
-artists.forEach(function(artist){
-    $("#artists").append(`<p> ${artist} </p>`);
-});
+    artists.forEach(function(artist){
+        $("#artists").append(`<p> ${artist} </p>`);
+    });
 
-songLengths.forEach(function(length){
-    $("#lengths").append(`<p> ${length} </p>`);
-});
+    songLengths.forEach(function(length){
+        $("#lengths").append(`<p> ${length} </p>`);
+    });
 
-songLinks.forEach(function(sLinks){
-    $("#links").append(`<a target="_blank" href=${sLinks}>`);
-});
+    songLinks.forEach(function(sLinks){
+        $("#links").append(`<a target="_blank" href=${sLinks}>Play</a>`);
+    });
 
-imageLinks.forEach(function(link){
-    $("#images").append(`<img src="${link}">`);
-});
+    imageLinks.forEach(function(link){
+        $("#images").append(`<img src="${link}">`);
+    });    
+}
 
 function emptySongInfo(){
     $("#songs").empty();
+    $("#artists").empty();
+    $("#lengths").empty();
+    $("#links").empty();
+    $("#images").empty();
     // Use jQuery to empty all of the remaining divs
-
-
 }
 
 
 function addSongInfo(){
     // BELOW write the code to add new items to each of the arrays.
-    let a = $("#song").val();
-    let b = $("#artist").val();
-    let c = $("#length").val();
-    let d = $("#image").val();
-    let e = $("#link").val();
-    
-    console.log("test");
+    songs.push($("#song").val());
+    artists.push($("#artist").val());
+    songLengths.push($("#length").val());
+    imageLinks.push($("#image").val());
+    songLinks.push($("#link").val());
 }
+
 
 $("#add").click(function() {
     emptySongInfo();

@@ -1,18 +1,89 @@
-h1 {
-    text-align: center;
+html,
+body{
+    margin:0;
+    padding:0;
+    height:100%;
+    width:100%;
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+#add{
+    background-color:lightgrey;
+    border:1.5px solid lightgrey;
+}
+
+#links{
+    color:black;
+}
+
+a{
+    cursor:pointer;
+}
+
+h1{
+    color:white;
+    position:fixed;
+    top:0;
     font-weight:bold;
 }
 
-#cart {
-    display: flex;
-    justify-content: center;
-    /*border-top: 5px solid black;
-    border-bottom: 5px solid black; */
+#text{
+    color:white;
+    position:fixed;
+    left:30px;
+    top:70px;
+    font-weight:bold;
 }
 
-.column {
-    width: 18%;
-    padding: 25px 0px;
+#form{
+    display:flex;
+    justify-content:center;
+    float:left;
+    flex-direction:column;
+    width:30%;
+    background-color:black;
+    height:100%;
+    position:fixed;
+    flex-wrap:wrap;
+}
+
+.inputDivs{
+    display: flex;
+    justify-content:center;
+}
+
+.buttonDiv{
+    display: flex;
+    justify-content:center;
+}
+
+.songInput{
+    width:80%;
+    text-align:center;
+}
+
+#add{
+    width:80%;
+    border:white 2px solid;
+    background-color:white;
+    font-weight:bold;
+}
+
+/*.songInput{
+    width:100px;
+    height:30px;
+}*/
+
+#cart{
+    display:flex;
+    justify-content:center;
+    width:70%;
+    float:right;
+    height:100%;
+    padding:100px;
 }
 
 #images img {
@@ -48,47 +119,4 @@ h1 {
     height: 100px;
     font-weight: bold;
     margin: 20px;
-}
-
-#form {
-    width: 75%;
-    margin: 0 auto 20px auto;
-    font-size: 18px;
-}
-
-input {
-    padding: 5px 10px;
-    font-size: 14px;
-}
-
-button {
-    font-size: 14px;
-    padding: 5px 10px;
-}
-
-html{
-    font-family: 'Roboto', sans-serif;
-}
-
-.songInput{
-    width:190px;
-}
-
-#form p{
-    text-align:center;
-}
-
-/* starter code ends here */
-
-#add{
-    background-color:lightgrey;
-    border:1.5px solid lightgrey;
-}
-
-#links{
-    color:black;
-}
-
-a{
-    cursor:pointer;
 }

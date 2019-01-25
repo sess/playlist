@@ -10,15 +10,32 @@
     </head>
 
     <body>
-        <h1>Playlist</h1>
         <div id="form">
-            <p>Add a new song:</p>
-            <input class="songInput" placeholder="Song Name" id="song">
-            <input class="songInput" placeholder="Artist Name" id="artist">
-            <input class="songInput" placeholder="Song Length" id="length">
-            <input class="songInput" placeholder="Image URL" id="image">
-            <input class="songInput" placeholder="Song Link Address" id="link">
-            <button id="add">Add</button>
+            <h1 class="text">Playlist</h1>
+            <p class="text" id="text">Add a new song:</p>
+            <div class="inputDivs" id="inputOne">
+                <input class="songInput" placeholder="Song Name" id="song">
+            </div>
+            <br>
+            <div class="inputDivs" id="inputTwo">
+                <input class="songInput" placeholder="Artist Name" id="artist">
+            </div>
+            <br>
+            <div class="inputDivs" id="inputThree">
+                <input class="songInput" placeholder="Song Length" id="length">
+            </div>
+            <br>
+            <div class="inputDivs" id="inputFour">
+                <input class="songInput" placeholder="Image URL" id="image">
+            </div>
+            <br>
+            <div class="inputDivs" id="inputFive">
+                <input class="songInput" placeholder="Song(Youtube) Link Address" id="link">
+            </div>
+            <br>
+            <div class="buttonDiv">
+                <button id="add">Add</button>
+            </div>
         </div>
         <div id="cart">
             <div class="column" id="images">
